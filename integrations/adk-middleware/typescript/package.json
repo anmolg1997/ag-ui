@@ -12,7 +12,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "clean": "rm -rf dist .turbo node_modules",
+    "clean": "git clean -fdX --exclude=\"!.env\"",
     "typecheck": "tsc --noEmit",
     "link:global": "pnpm link --global",
     "unlink:global": "pnpm unlink --global"
